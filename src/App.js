@@ -3,9 +3,8 @@ import './App.css';
 
 function App() {
   const buttons = [
-    { label: 'Telegram 1', link: 'https://t.me/your_telegram1' },
-    { label: 'Telegram 2', link: 'https://t.me/your_telegram2' },
-    { label: 'Telegram 3', link: 'https://t.me/your_telegram3' }
+    { label: 'Telegram 1', link: 'https://t.me/tg_marcus_top1' },
+
   ];
 
   return (
