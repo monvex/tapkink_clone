@@ -3,14 +3,14 @@ import './App.css';
 
 function App() {
   const buttons = [
-    { label: 'Telegram 1', link: 'https://t.me/tg_marcus_top1' },
+    { label: 'Телеграм 💬', link: 'https://t.me/onlinezar0bitokbot' },
 
   ];
 
   return (
       <div className="container">
         <div className="content">
-          <h1>Мои контакты</h1>
+          <h1>Зв'язок зі мною ⬇️</h1>
           <div className="buttons">
             {buttons.map((button, index) => (
                 <a key={index} href={button.link} className="button" target="_blank" rel="noopener noreferrer">
