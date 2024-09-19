@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
 
-const TelegramButton = () => {
+const Button = () => {
     const [loading, setLoading] = useState(false);
 
     const handleButtonClick = async () => {
         setLoading(true);
         try {
             // Отправляем запрос на сервер для получения ссылки
-            const response = await fetch('/get-telegram-link');
+            const response = await fetch('/get-link');
             const data = await response.json();
             // Перенаправляем пользователя на полученную ссылку
             window.location.href = data.link;
@@ -29,4 +29,4 @@ const TelegramButton = () => {
     );
 };
 
-export default TelegramButton;
+export default Button;

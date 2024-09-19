@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import TelegramButton from "./TelegramButton";
+import Button from "./Button";
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
         <div className="content">
           <h1>Зв'язок зі мною ⬇️</h1>
           <div className="buttons">
-              <TelegramButton />  {/* Вставляем компонент кнопки */}
+              <Button />  {/* Вставляем компонент кнопки */}
           </div>
         </div>
       </div>
