@@ -24,7 +24,7 @@ const Button = () => {
             onClick={handleButtonClick} disabled={loading}
             className="button"
         >
-            {loading ? 'Завантаження...' : 'Телеграм 💬'}
+            {loading ? 'Завантаження...' : 'Zarobitok2025 💬'}
         </button>
     );
 };

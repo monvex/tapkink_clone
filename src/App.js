@@ -7,7 +7,7 @@ function App() {
   return (
       <div className="container">
         <div className="content">
-          <h1>Зв'язок зі мною ⬇️</h1>
+          <h1>Онлайн Заробiток ⬇️</h1>
           <div className="buttons">
               <Button />  {/* Вставляем компонент кнопки */}
           </div>
