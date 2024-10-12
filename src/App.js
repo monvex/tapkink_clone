@@ -79,7 +79,7 @@ function App() {
                 <section id="beneath_hero" className="container-beneath-about">
                     <div className="beneath-about-video">
                         <video
-                            src="/dollars_falling.mp4"
+                            src={process.env.PUBLIC_URL + '/dollars_falling.mp4'}
                             autoPlay
                             muted
                             loop
