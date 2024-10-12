@@ -103,17 +103,17 @@ function App() {
                     <h2>Our feedback</h2>
                     <div className="feedback-cards">
                         <div className="card">
-                            <a href="https://t.me/makimalex"><img  src="/images/test_image.jpg" alt="Service 1"/></a>
+                            <a href="https://t.me/makimalex"><img  src={process.env.PUBLIC_URL + '/images/test_image.jpg'} alt="Service 1"/></a>
                             <h3>Service 1</h3>
                             <p>High-quality solutions tailored to your needs.</p>
                         </div>
                         <div className="card">
-                            <a href="https://t.me/poshdara"><img src="/images/test_image.jpg" alt="Service 1"/></a>
+                            <a href="https://t.me/poshdara"><img src={process.env.PUBLIC_URL + '/images/test_image.jpg'} alt="Service 1"/></a>
                             <h3>Service 2</h3>
                             <p>Dedicated support and professional feedback.</p>
                         </div>
                         <div className="card">
-                            <a href="https://t.me/trueegakrit"><img src="/images/test_image.jpg" alt="Service 1"/></a>
+                            <a href="https://t.me/trueegakrit"><img src={process.env.PUBLIC_URL + '/images/test_image.jpg'} alt="Service 1"/></a>
                             <h3>Service 2</h3>
                             <p>Dedicated support and professional feedback.</p>
                         </div>
