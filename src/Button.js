@@ -20,12 +20,15 @@ const Button = () => {
     };
 
     return (
-        <button
-            onClick={handleButtonClick} disabled={loading}
-            className="button"
-        >
-            {loading ? 'Завантаження...' : 'Zarobitok2025 💬'}
-        </button>
+        <div className="wrap">
+            <button
+                onClick={handleButtonClick} disabled={loading}
+                className="button"
+            >
+                {loading ? 'Завантаження...' : 'ХОЧУ ЗАРОБЛЯТИ!'}
+            </button>
+        </div>
+
     );
 };
 
