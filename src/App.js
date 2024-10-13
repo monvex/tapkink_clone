@@ -38,6 +38,32 @@ function App() {
     //         });
     //     }
     // };
+    window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {  // Если страница была восстановлена из кеша
+            window.location.reload();  // Обновляем страницу
+        }
+    });
+
+    window.addEventListener('focus', () => {
+        document.body.style.transform = 'translateZ(0)';  // Принудительное обновление
+    });
+
+    useEffect(() => {
+        const videoElement = document.querySelector('.hero-video');
+
+        const handleVisibilityChange = () => {
+            if (document.visibilityState === 'visible' && videoElement.paused) {
+                videoElement.play();
+            }
+        };
+
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+
+        return () => {
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
+        };
+    }, []);
+
 
     return (
         <Router>
@@ -60,10 +86,18 @@ function App() {
 
                 {/* Hero Section */}
                 <section className="hero">
+                    <div className="hero-video">
+                        <div className="hero-overlay"></div>
+                        <video autoPlay muted loop playsInline>
+                            <source src={process.env.PUBLIC_URL + '/hero_video.mp4'} type="video/mp4"/>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
                     <div className="hero-text">
-                        <p>Новый способ онлайн заработка</p>
+                        <p>Новий спосіб онлайн заробітку</p>
                         <button onClick={() => document.getElementById('about').scrollIntoView({behavior: 'smooth'})}>
-                            Узнать подробнее
+                            Дізнатися докладніше
                         </button>
                     </div>
                 </section>
@@ -71,15 +105,15 @@ function App() {
 
                 {/* About Section */}
                 <section id="about" className="about">
-                    <h2>About Us</h2>
-                    <p>Вы когда-нибудь мечтали о том, чтобы деньги сами шли к вам в карман? Арбитраж трафика — это ваш
+                    <h2>Про мене і мою діяльність</h2>
+                    <p>Ви коли-небудь мріяли про те, щоб гроші самі йшли до вас у кишеню? Арбітраж трафіку - це ваш
                         шанс!</p>
                 </section>
 
                 <section id="beneath_hero" className="container-beneath-about">
                     <div className="beneath-about-video">
                         <video
-                            src={process.env.PUBLIC_URL + '/dollars_falling.mp4'}
+                            src={process.env.PUBLIC_URL + '/beneath_about_video.mp4'}
                             autoPlay
                             muted
                             loop
@@ -92,37 +126,39 @@ function App() {
                 <section className="marquee-section">
                     <div className="marquee">
                         <div className="marquee-content">
-                            <span>Ваш текст будет двигаться здесь. Это может быть сообщение или любой другой контент. </span>
-                            <span>Ваш текст будет двигаться здесь. Это может быть сообщение или любой другой контент. </span>
+                            <span> ТІЛЬКИ ЛЕГАЛЬНІ МЕТОДИ * СУПРОВІД ЗІ СТАРТУ І ДО ПЕРШОГО УСПІХУ * РЕЗУЛЬТАТ ГАРАНТОВАНИЙ *&nbsp;</span>
+                            <span> ТІЛЬКИ ЛЕГАЛЬНІ МЕТОДИ * СУПРОВІД ЗІ СТАРТУ І ДО ПЕРШОГО УСПІХУ * РЕЗУЛЬТАТ ГАРАНТОВАНИЙ *&nbsp;</span>
                         </div>
                     </div>
                 </section>
 
                 {/* Feedback Section */}
                 <section id="feedback" className="feedback">
-                    <h2>Our feedback</h2>
+                    <h2>Відгуки</h2>
                     <div className="feedback-cards">
                         <div className="card">
-                            <a href="https://t.me/makimalex"><img  src={process.env.PUBLIC_URL + '/images/test_image.jpg'} alt="Service 1"/></a>
-                            <h3>Service 1</h3>
-                            <p>High-quality solutions tailored to your needs.</p>
+                            <a href="https://t.me/makimalex"><img  src={process.env.PUBLIC_URL + '/images/leha.jpg'} alt="Service 1"/></a>
+                            <h3>Олексій</h3>
+                            <p>Дякую Маркусу за чіткі інструкції та постійну підтримку!<br />Однозначно рекомендую!</p>
+
                         </div>
                         <div className="card">
-                            <a href="https://t.me/poshdara"><img src={process.env.PUBLIC_URL + '/images/test_image.jpg'} alt="Service 1"/></a>
-                            <h3>Service 2</h3>
-                            <p>Dedicated support and professional feedback.</p>
+                            <a href="https://t.me/poshdara"><img src={process.env.PUBLIC_URL + '/images/posh.jpg'} alt="Service 1"/></a>
+                            <h3>Даріна</h3>
+                            <p>Уже дуже давно працюю з цією людиною і хочу сказати величезне спасибі за такий цікавий і прибутковий спосіб заробітку!!!</p>
                         </div>
                         <div className="card">
-                            <a href="https://t.me/trueegakrit"><img src={process.env.PUBLIC_URL + '/images/test_image.jpg'} alt="Service 1"/></a>
-                            <h3>Service 2</h3>
-                            <p>Dedicated support and professional feedback.</p>
+                            <a href="https://t.me/trueegakrit"><img src={process.env.PUBLIC_URL + '/images/egor.jpg'} alt="Service 1"/></a>
+                            <h3>Егор</h3>
+                            <p>Спочатку думав, що черговий розводняк, але Маркус усе пояснив і розклав по поличках.</p>
+                            <p>Людина надійна, можу порекомендувати тим, хто РЕАЛЬНО хоче працювати в інтернеті.</p>
                         </div>
                     </div>
                 </section>
 
                 {/* Contact Section */}
                 <section id="contact" className="contacts-container">
-                    <p>Заинтересовался? Жми на кнопку и скорее свяжись со мной!</p>
+                    <p>Зацікавило? Швидше тисни і зв'яжися зі мною!</p>
                     <div className="telegram-block">
                         <Button></Button>
                     </div>
@@ -131,7 +167,7 @@ function App() {
 
                 {/* Footer */}
                 <footer className="footer">
-                    <p>&copy; 2024 Your Business Name. All rights reserved.</p>
+                    <p>&copy; 2024 Marcus Project</p>
                 </footer>
             </div>
         </Router>
