@@ -108,6 +108,7 @@ function App() {
                     <h2>Про мене і мою діяльність</h2>
                     <p>Ви коли-небудь мріяли про те, щоб гроші самі йшли до вас у кишеню? Арбітраж трафіку - це ваш
                         шанс!</p>
+                    <p>Моя мета - ділитися знаннями й особистим досвідом у цій сфері, зробити складні процеси простими й доступними для кожного, щоб ви могли досягати результату й успішно заробляти, не виходячи з дому!</p>
                 </section>
 
                 <section id="beneath_hero" className="container-beneath-about">
@@ -137,18 +138,25 @@ function App() {
                     <h2>Відгуки</h2>
                     <div className="feedback-cards">
                         <div className="card">
-                            <a href="https://t.me/makimalex"><img  src={process.env.PUBLIC_URL + '/images/leha.jpg'} alt="Service 1"/></a>
+                            {/*<a href="https://t.me/makimalex"><img src={process.env.PUBLIC_URL + '/images/leha.jpg'}*/}
+                            {/*                                      alt="Service 1"/></a>*/}
+                            <img src={process.env.PUBLIC_URL + '/images/leha.jpg'} alt="Service 1"/>
                             <h3>Олексій</h3>
-                            <p>Дякую Маркусу за чіткі інструкції та постійну підтримку!<br />Однозначно рекомендую!</p>
+                            <p>Дякую Маркусу за чіткі інструкції та постійну підтримку!<br/>Однозначно рекомендую!</p>
 
                         </div>
                         <div className="card">
-                            <a href="https://t.me/poshdara"><img src={process.env.PUBLIC_URL + '/images/posh.jpg'} alt="Service 1"/></a>
+                            {/*<a href="https://t.me/poshdara"><img src={process.env.PUBLIC_URL + '/images/posh.jpg'}*/}
+                            {/*                                     alt="Service 1"/></a>*/}
+                            <img src={process.env.PUBLIC_URL + '/images/posh.jpg'} alt="Service 1"/>
                             <h3>Даріна</h3>
-                            <p>Уже дуже давно працюю з цією людиною і хочу сказати величезне спасибі за такий цікавий і прибутковий спосіб заробітку!!!</p>
+                            <p>Уже дуже давно працюю з цією людиною і хочу сказати величезне спасибі за такий цікавий і
+                                прибутковий спосіб заробітку!!!</p>
                         </div>
                         <div className="card">
-                            <a href="https://t.me/trueegakrit"><img src={process.env.PUBLIC_URL + '/images/egor.jpg'} alt="Service 1"/></a>
+                            {/*<a href="https://t.me/trueegakrit"><img src={process.env.PUBLIC_URL + '/images/egor.jpg'}*/}
+                            {/*                                        alt="Service 1"/></a>*/}
+                            <img src={process.env.PUBLIC_URL + '/images/egor.jpg'} alt="Service 1"/>
                             <h3>Егор</h3>
                             <p>Спочатку думав, що черговий розводняк, але Маркус усе пояснив і розклав по поличках.</p>
                             <p>Людина надійна, можу порекомендувати тим, хто РЕАЛЬНО хоче працювати в інтернеті.</p>
