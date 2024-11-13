@@ -7,11 +7,9 @@ const Button = () => {
     const handleButtonClick = async () => {
         setLoading(true);
         try {
-            // Отправляем запрос на сервер для получения ссылки
-            const response = await fetch('/get-link');
-            const data = await response.json();
+
             // Перенаправляем пользователя на полученную ссылку
-            window.location.href = data.link;
+            window.location.href = "https://t.me/+15RVILLqExI2MTdi"
         } catch (error) {
             console.error('Ошибка при получении ссылки на Telegram:', error);
         } finally {
