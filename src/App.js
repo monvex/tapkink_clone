@@ -138,25 +138,19 @@ function App() {
                     <h2>Відгуки</h2>
                     <div className="feedback-cards">
                         <div className="card">
-                            <a href="https://t.me/makimalex"><img src={process.env.PUBLIC_URL + '/images/leha.jpg'}
-                                                                  alt="Service 1"/></a>
-                            {/*<img src={process.env.PUBLIC_URL + '/images/leha.jpg'} alt="Service 1"/>*/}
+                            <img src={process.env.PUBLIC_URL + '/images/leha.jpg'} alt="Service 1"/>
                             <h3>Олексій</h3>
                             <p>Дякую Маркусу за чіткі інструкції та постійну підтримку!<br/>Однозначно рекомендую!</p>
 
                         </div>
                         <div className="card">
-                            <a href="https://t.me/poshdara"><img src={process.env.PUBLIC_URL + '/images/posh.jpg'}
-                                                                 alt="Service 1"/></a>
-                            {/*<img src={process.env.PUBLIC_URL + '/images/posh.jpg'} alt="Service 1"/>*/}
+                            <img src={process.env.PUBLIC_URL + '/images/posh.jpg'} alt="Service 1"/>
                             <h3>Даріна</h3>
                             <p>Уже дуже давно працюю з цією людиною і хочу сказати величезне спасибі за такий цікавий і
                                 прибутковий спосіб заробітку!!!</p>
                         </div>
                         <div className="card">
-                            <a href="https://t.me/trueegakrit"><img src={process.env.PUBLIC_URL + '/images/egor.jpg'}
-                                                                    alt="Service 1"/></a>
-                            {/*<img src={process.env.PUBLIC_URL + '/images/egor.jpg'} alt="Service 1"/>*/}
+                            <img src={process.env.PUBLIC_URL + '/images/egor.jpg'} alt="Service 1"/>
                             <h3>Егор</h3>
                             <p>Спочатку думав, що черговий розводняк, але Маркус усе пояснив і розклав по поличках.</p>
                             <p>Людина надійна, можу порекомендувати тим, хто РЕАЛЬНО хоче працювати в інтернеті.</p>
@@ -167,7 +161,7 @@ function App() {
                 {/* Contact Section */}
                 <section id="contact" className="contacts-container">
                     <p>Зацікавило? Швидше тисни і зв'яжися зі мною!</p>
-                    <div className="telegram-block">
+                    <div className="button-block">
                         <Button></Button>
                     </div>
 
