@@ -31,4 +31,4 @@ const ProfileButton1 = () => {
     );
 };
 
-export default Button;
+export default ProfileButton1;
