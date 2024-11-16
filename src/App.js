@@ -3,6 +3,9 @@ import './App.css';
 import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Button from "./Button";
+import ProfileLink1 from "./ProfileLink1";
+import ProfileLink2 from "./ProfileLink2";
+import ProfileLink3 from "./ProfileLink3";
 
 // Компонент для прокрутки к секции
 function ScrollToSection() {
@@ -137,24 +140,9 @@ function App() {
                 <section id="feedback" className="feedback">
                     <h2>Відгуки</h2>
                     <div className="feedback-cards">
-                        <div className="card">
-                            <img src={process.env.PUBLIC_URL + '/images/leha.jpg'} alt="Service 1"/>
-                            <h3>Олексій</h3>
-                            <p>Дякую Маркусу за чіткі інструкції та постійну підтримку!<br/>Однозначно рекомендую!</p>
-
-                        </div>
-                        <div className="card">
-                            <img src={process.env.PUBLIC_URL + '/images/posh.jpg'} alt="Service 1"/>
-                            <h3>Даріна</h3>
-                            <p>Уже дуже давно працюю з цією людиною і хочу сказати величезне спасибі за такий цікавий і
-                                прибутковий спосіб заробітку!!!</p>
-                        </div>
-                        <div className="card">
-                            <img src={process.env.PUBLIC_URL + '/images/egor.jpg'} alt="Service 1"/>
-                            <h3>Егор</h3>
-                            <p>Спочатку думав, що черговий розводняк, але Маркус усе пояснив і розклав по поличках.</p>
-                            <p>Людина надійна, можу порекомендувати тим, хто РЕАЛЬНО хоче працювати в інтернеті.</p>
-                        </div>
+                        <ProfileLink1></ProfileLink1>
+                        <ProfileLink2></ProfileLink2>
+                        <ProfileLink3></ProfileLink3>
                     </div>
                 </section>
 
