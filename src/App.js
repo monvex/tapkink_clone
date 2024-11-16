@@ -3,9 +3,9 @@ import './App.css';
 import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Button from "./Button";
-import ProfileLink1 from "./ProfileLink1";
-import ProfileLink2 from "./ProfileLink2";
-import ProfileLink3 from "./ProfileLink3";
+import ProfileButton1 from "./ProfileLink1";
+import ProfileButton2 from "./ProfileLink2";
+import ProfileButton3 from "./ProfileLink3";
 
 // Компонент для прокрутки к секции
 function ScrollToSection() {
@@ -140,9 +140,9 @@ function App() {
                 <section id="feedback" className="feedback">
                     <h2>Відгуки</h2>
                     <div className="feedback-cards">
-                        <ProfileLink1></ProfileLink1>
-                        <ProfileLink2></ProfileLink2>
-                        <ProfileLink3></ProfileLink3>
+                        <ProfileButton1></ProfileButton1>
+                        <ProfileButton2></ProfileButton2>
+                        <ProfileButton3></ProfileButton3>
                     </div>
                 </section>
 
