@@ -1,5 +1,6 @@
 {
   "name": "taplink_clone",
+  "homepage": "/marcusproject",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -13,7 +13,7 @@ const Button = () => {
             // Перенаправляем пользователя на полученную ссылку
             window.location.href = data.link;
         } catch (error) {
-            console.error('Ошибка при получении ссылки на Telegram:', error);
+            console.error('Ошибка получения ссылки', error);
         } finally {
             setLoading(false);
         }
