@@ -8,7 +8,7 @@ const ProfileButton3 = () => {
         setLoading(true);
         try {
             // Отправляем запрос на сервер для получения ссылки
-            const response = await fetch('https://29044-47246.bacloud.info/get-profile-link3');
+            const response = await fetch('/get-profile-link3');
             const data = await response.json();
             // Перенаправляем пользователя на полученную ссылку
             window.location.href = data.link;
