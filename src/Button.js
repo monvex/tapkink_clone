@@ -8,7 +8,7 @@ const Button = () => {
         setLoading(true);
         try {
             // Отправляем запрос на сервер для получения ссылки
-            const response = await fetch('https://marcuspro.life/get-link');
+            const response = await fetch('https://marcuspro.life/api/get-link');
             const data = await response.json();
             // Перенаправляем пользователя на полученную ссылку
             window.location.href = data.link;
