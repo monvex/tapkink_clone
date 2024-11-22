@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/marcusproject/static/css/main.651ff73a.css",
-    "main.js": "/marcusproject/static/js/main.6b12279f.js",
-    "static/js/453.92eec6e9.chunk.js": "/marcusproject/static/js/453.92eec6e9.chunk.js",
-    "index.html": "/marcusproject/index.html",
-    "main.651ff73a.css.map": "/marcusproject/static/css/main.651ff73a.css.map",
-    "main.6b12279f.js.map": "/marcusproject/static/js/main.6b12279f.js.map",
-    "453.92eec6e9.chunk.js.map": "/marcusproject/static/js/453.92eec6e9.chunk.js.map"
+    "main.css": "/tapkink_clone/static/css/main.651ff73a.css",
+    "main.js": "/tapkink_clone/static/js/main.9e163123.js",
+    "static/js/453.92eec6e9.chunk.js": "/tapkink_clone/static/js/453.92eec6e9.chunk.js",
+    "index.html": "/tapkink_clone/index.html",
+    "main.651ff73a.css.map": "/tapkink_clone/static/css/main.651ff73a.css.map",
+    "main.9e163123.js.map": "/tapkink_clone/static/js/main.9e163123.js.map",
+    "453.92eec6e9.chunk.js.map": "/tapkink_clone/static/js/453.92eec6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.651ff73a.css",
-    "static/js/main.6b12279f.js"
+    "static/js/main.9e163123.js"
   ]
 }
