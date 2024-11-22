@@ -92,13 +92,13 @@ function App() {
                     <div className="hero-video">
                         <div className="hero-overlay"></div>
                         <video autoPlay muted loop playsInline>
-                            <source src={process.env.PUBLIC_URL + '/hero_video.mp4'} type="video/mp4"/>
-                            Your browser does not support the video tag.
+                            <source src={process.env.PUBLIC_URL + '/hero_video2.mp4'} type="video/mp4"/>
+                            Ваш браузер не підтримує перегляд відео.
                         </video>
                     </div>
 
                     <div className="hero-text">
-                        <p>Новий спосіб онлайн заробітку</p>
+                        <p>Унікальний спосіб заробляти з дому</p>
                         <button onClick={() => document.getElementById('about').scrollIntoView({behavior: 'smooth'})}>
                             Дізнатися докладніше
                         </button>
@@ -108,11 +108,26 @@ function App() {
 
                 {/* About Section */}
                 <section id="about" className="about">
-                    <h2>Про мене і мою діяльність</h2>
-                    <p>Ви коли-небудь мріяли про те, щоб гроші самі йшли до вас у кишеню? Арбітраж трафіку - це ваш
-                        шанс!</p>
-                    <p>Моя мета - ділитися знаннями й особистим досвідом у цій сфері, зробити складні процеси простими й доступними для кожного, щоб ви могли досягати результату й успішно заробляти, не виходячи з дому!</p>
+                    <h2>Про мою діяльність</h2>
+                    <p>Вы когда-нибудь мечтали, чтобы деньги сами шли к вам в карман, пока вы занимаетесь своим любимым
+                        делом? Моя методика - це ваш шанс!</p>
+                    <p>Моя мета - ділитися з вами знаннями, які я накопичив за роки роботи в інтернеті і зробити так,
+                        щоб <strong>КОЖЕН</strong> зміг вийти на гідний дохід.</p>
+                    <p>Найголовніше, що <strong>НЕ ВАЖЛИВО</strong> де ти живеш: на батьківщині чи тобі довелося виїхати
+                        в пошуках кращого життя. Зі мною ти зможеш заробляти і добре жити <strong>В
+                            БУДЬ-ЯКІЙ</strong> точці світу!</p>
                 </section>
+
+
+                <section className="marquee-section">
+                    <div className="marquee">
+                        <div className="marquee-content">
+                            <span> СУПРОВІД ЗІ СТАРТУ І ДО ПЕРШОГО УСПІХУ *** ТИСЯЧІ ВІДГУКІВ *** ШВИДКИЙ РЕЗУЛЬТАТ *&nbsp;</span>
+                            <span> СУПРОВІД ЗІ СТАРТУ І ДО ПЕРШОГО УСПІХУ *** ТИСЯЧІ ВІДГУКІВ *** ШВИДКИЙ РЕЗУЛЬТАТ *&nbsp;</span>
+                        </div>
+                    </div>
+                </section>
+
 
                 <section id="beneath_hero" className="container-beneath-about">
                     <div className="beneath-about-video">
@@ -127,22 +142,13 @@ function App() {
                     </div>
                 </section>
 
-                <section className="marquee-section">
-                    <div className="marquee">
-                        <div className="marquee-content">
-                            <span> ТІЛЬКИ ЛЕГАЛЬНІ МЕТОДИ * СУПРОВІД ЗІ СТАРТУ І ДО ПЕРШОГО УСПІХУ * РЕЗУЛЬТАТ ГАРАНТОВАНИЙ *&nbsp;</span>
-                            <span> ТІЛЬКИ ЛЕГАЛЬНІ МЕТОДИ * СУПРОВІД ЗІ СТАРТУ І ДО ПЕРШОГО УСПІХУ * РЕЗУЛЬТАТ ГАРАНТОВАНИЙ *&nbsp;</span>
-                        </div>
-                    </div>
-                </section>
-
                 {/* Feedback Section */}
                 <section id="feedback" className="feedback">
                     <h2>Відгуки</h2>
                     <div className="feedback-cards">
-                        <ProfileButton1></ProfileButton1>
-                        <ProfileButton2></ProfileButton2>
                         <ProfileButton3></ProfileButton3>
+                        <ProfileButton2></ProfileButton2>
+                        <ProfileButton1></ProfileButton1>
                     </div>
                 </section>
 
