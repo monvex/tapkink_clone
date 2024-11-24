@@ -8,7 +8,7 @@ const ProfileButton1 = () => {
         setLoading(true);
         try {
             // Отправляем запрос на сервер для получения ссылки
-            const response = await fetch('https://marcuspro.life/api/get-profile-link1');
+            const response = await fetch('https://marcuspro.life/api/get-profile-link-alex');
             const data = await response.json();
             // Перенаправляем пользователя на полученную ссылку
             window.location.href = data.link;
